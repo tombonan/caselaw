@@ -1,4 +1,6 @@
-require File.expand_path("../lib/caselaw/version", __FILE__)
+$LOAD_PATH.push File.expand_path("../lib", __FILE__)
+require "caselaw/version"
+
 
 Gem::Specification.new do |spec|
   spec.name          = "caselaw"
@@ -16,8 +18,13 @@ Gem::Specification.new do |spec|
   
   spec.add_runtime_dependency "httparty", "~> 16.3"
 
-  spec.files         = `git ls-files`.split("\n")
-  spec.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  spec.post_install_message = "Welcome to the Case Law party!"
+
+  all_files = `git ls-files`.split("\n")
+  test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
+
+  spec.files         = all_files - test_files
+  spec.test_files    = test_files
   spec.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 end
