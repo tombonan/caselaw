@@ -1,6 +1,6 @@
 require 'httparty'
 
-module CaseLaw
+module Caselaw
   class Request
   end
 end
