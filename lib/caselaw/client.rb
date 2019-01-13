@@ -1,6 +1,5 @@
 module Caselaw
   class Client
-    include Caselaw::Request
 
     attr_reader :api_key
 
