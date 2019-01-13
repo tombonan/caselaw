@@ -16,7 +16,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   
-  spec.add_runtime_dependency "httparty", "~> 16.3"
+  spec.add_runtime_dependency "httparty", "~> 0.16.3"
+  spec.add_runtime_dependency "hashie", "~> 3.6"
 
   spec.post_install_message = "Welcome to the Case Law party!"
 
