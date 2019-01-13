@@ -2,6 +2,7 @@ require "caselaw/version"
 require "caselaw/errors"
 require "caselaw/request"
 require "caselaw/client"
+require "caselaw/jurisdiction"
 
 module Caselaw
   class << self
