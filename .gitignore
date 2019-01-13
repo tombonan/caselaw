@@ -31,3 +31,6 @@ tmtags/.bundle/
 
 # rspec failure tracking
 .rspec_status
+
+# test files
+sample-requests.txt

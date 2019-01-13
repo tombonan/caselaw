@@ -1,10 +1,20 @@
 require "caselaw/client"
+require "caselaw/client/cases"
+require "caselaw/client/citations"
+require "caselaw/client/courts"
 require "caselaw/client/jurisdictions"
+require "caselaw/client/reporters"
+require "caselaw/client/volumes"
 
 module Caselaw
   class Client
     include Caselaw::Request
-    # include Caselaw::Jurisdictions
+    include Caselaw::Cases
+    include Caselaw::Citations
+    include Caselaw::Courts
+    include Caselaw::Jurisdictions
+    include Caselaw::Reporters
+    include Caselaw::Volumes
     
     attr_reader :api_key
 
