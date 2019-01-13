@@ -1,6 +1,7 @@
 require "caselaw/version"
-require "caselaw/client"
+require "caselaw/errors"
 require "caselaw/request"
+require "caselaw/client"
 
 module Caselaw
   class << self
@@ -12,7 +13,10 @@ module Caselaw
     Caselaw::Client.new(params)
   end
 
+  # Global configuration settings
   def self.configure(params = {})
+    # fail(ArgumentError, "API key hash required.") unless params.is_a?(Hash)
+    
     settings[:api_key] = params[:api_key]
     settings
   end

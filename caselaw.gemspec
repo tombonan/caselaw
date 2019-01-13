@@ -1,7 +1,6 @@
 $LOAD_PATH.push File.expand_path("../lib", __FILE__)
 require "caselaw/version"
 
-
 Gem::Specification.new do |spec|
   spec.name          = "caselaw"
   spec.version       = Caselaw::VERSION
