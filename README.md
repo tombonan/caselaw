@@ -62,3 +62,17 @@ search.results.each do |jurisdiction|
   jurisdiction.slug          # => slug in use on the API
 end
 ```
+
+### Lookup a case instance
+
+You can search for a case with a given id
+
+```ruby
+client.case(1021505)
+```
+
+And to return the full body of the case instance, add the `full_case=true` parameter
+
+```ruby
+client.case(1021505, full_case=true)
+```

@@ -24,5 +24,18 @@ module Caselaw
       path = API_ENDPOINT + "?jurisdiction=" + slug + "&full_case=true" if full_case == true
       Hashie::Mash.new(request(path)) #add pagination request
     end
+
+    def case_search(term)
+      
+    end
+
+    def case_search_by_jurisdiction_id(term, jurisdiction_id)
+      slug = Caselaw::Jurisdiction.get_by_id(jurisdiction_id)
+      
+    end
+
+    def case_search_by_jurisdiction_name(term, jurisdiction_name)
+      slug = Caselaw::Jurisdiction.get_by_name(jurisdiction_name)
+    end
   end
 end
