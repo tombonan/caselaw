@@ -1,8 +1,20 @@
 module Caselaw
   module Jurisdictions
-    def jurisdiction_by_name
-      path = 'jurisdictions/ala'
-      request(path)
+    API_ENDPOINT = "jurisdictions/"
+    
+    def search_jurisdictions
+    end
+
+    def jurisdiction_by_name(name)
+      slug = Caselaw::Jurisdiction.get_by_name(name)
+      path = API_ENDPOINT + slug
+      data = request(path)
+    end
+
+    def jurisdiction(id)
+      slug = Caselaw::Jurisdiction.get_by_id(id)
+      path = API_ENDPOINT + slug
+      data = request(path)
     end
   end
 end

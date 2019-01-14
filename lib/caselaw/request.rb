@@ -1,4 +1,6 @@
-require 'httparty'
+require "httparty"
+require "hashie"
+require "pp"
 
 module Caselaw
   module Request
@@ -10,12 +12,11 @@ module Caselaw
       # fail(Caselaw::ConfigurationError, "API key required.") if token.nil?
 
       res = HTTParty.get(API_ROOT + path, headers: {"Authorization" => token})
-      puts res.parse_response
-
+      parsed_response(res)
     end
 
-    def print_test
-      puts api_key
+    def parsed_response(res)
+      pp res.parsed_response
     end
   end
 end
