@@ -28,7 +28,7 @@ Caselaw.configure(
 )
 ```
 
-To access access the global configurations:
+To access access the global configuration:
 
 ``` ruby
 Caselaw.configuration # => { api_key: "KEY" }

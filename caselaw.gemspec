@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.name          = "caselaw"
   spec.version       = Caselaw::VERSION
   spec.authors       = ["tombonan"]
-  spec.email         = ["tombonan018@gmail.com"]
+  spec.email         = ["tombonan27@gmail.com"]
   spec.summary       = "Case.law API wrapper"
   spec.description   = "Wrapper for the Caselaw Access Project API"
   spec.homepage      = "https://github.com/tombonan/caselaw"
