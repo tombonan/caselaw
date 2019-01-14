@@ -5,7 +5,9 @@ RSpec.describe Caselaw do
     expect(Caselaw::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
-  end
+  describe ".new" do
+    it "returns a new client instance" do
+      expect(Caselaw.new).to be_a(Caselaw::Client)
+    end
+  end 
 end
