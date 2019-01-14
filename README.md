@@ -41,3 +41,24 @@ Caselaw.reset_configuration
 ```
 
 ## Examples
+
+### Lookup a Jurisdiction
+
+You can lookup a Jurisdiction by id or the full name if unknown
+
+```ruby
+client.jurisdiction(31)
+client.jurisdiction_by_name("Colorado")
+```
+
+Or get all the Jurisdictions and related information
+
+```ruby
+search = client.search_jurisdictions
+
+search.results.each do |jurisdiction|
+  jurisdiction.id	     # => jurisdiction id
+  jurisdiction.name_long     # => jurisdiction full name
+  jurisdiction.slug          # => slug in use on the API
+end
+```

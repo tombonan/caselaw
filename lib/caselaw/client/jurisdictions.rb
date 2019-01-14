@@ -1,8 +1,10 @@
 module Caselaw
   module Jurisdictions
     API_ENDPOINT = "jurisdictions/"
-    
+
+    # Return all Jurisdictions
     def search_jurisdictions
+      Hashie::Mash.new(request(API_ENDPOINT))
     end
 
     def jurisdiction_by_name(name)
