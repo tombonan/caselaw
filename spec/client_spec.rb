@@ -9,6 +9,6 @@ RSpec.describe Caselaw::Client do
       expect { Caselaw::Client.new("Tom") }
         .to raise_error(ArgumentError, "API key hash is required.")
     end
-  end    
-    
+  end
+
 end

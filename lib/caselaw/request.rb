@@ -21,7 +21,7 @@ module Caselaw
     end
 
     def parsed_response(res)
-      pp res.parsed_response
+      res.parsed_response
     end
   end
 end
