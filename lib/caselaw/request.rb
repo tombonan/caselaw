@@ -1,6 +1,5 @@
 require "httparty"
 require "hashie"
-require "pp"
 
 module Caselaw
   module Request

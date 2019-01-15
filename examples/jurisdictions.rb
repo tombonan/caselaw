@@ -7,7 +7,7 @@ client = Caselaw::Client.new(api_key: "KEY")
 search = client.search_jurisdictions
 
 search.results.each do |jurisdiction|
-  pp "Name: " + jurisdiction.name_long + " | ID: " + jurisdiction.id.to_s + " | Slug: " + jurisdiction.slug
+  pp "Name: " + jurisdiction.name_long + "| ID: " + jurisdiction.id.to_s + "| Slug: " + jurisdiction.slug
 end
 
 
