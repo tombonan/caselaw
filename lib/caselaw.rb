@@ -16,7 +16,7 @@ module Caselaw
 
   # Global configuration settings
   def self.configure(params = {})
-    # fail(ArgumentError, "API key hash required.") unless params.is_a?(Hash)
+    fail(ArgumentError, "API key hash required.") unless params.is_a?(Hash)
     
     settings[:api_key] = params[:api_key]
     settings

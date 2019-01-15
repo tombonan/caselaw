@@ -24,20 +24,8 @@ You can define the credentials for a client at a global level by creating an ini
 
 ``` ruby
 Caselaw.configure(
-  api_key: "KEY",
+  api_key: "KEY"
 )
-```
-
-To access access the global configuration:
-
-``` ruby
-Caselaw.configuration # => { api_key: "KEY" }
-```
-
-To reset the global configuration:
-
-``` ruby
-Caselaw.reset_configuration
 ```
 
 ## Examples
@@ -65,14 +53,27 @@ end
 
 ### Lookup a case instance
 
-You can search for a case with a given id
+You can search for a case with a given case id
 
 ```ruby
 client.case(1021505)
 ```
 
-And to return the full body of the case instance, add the `full_case=true` parameter
+And to return the full body of the case instance, add the `true` parameter as the second argument
 
 ```ruby
-client.case(1021505, full_case=true)
+client.case(1021505, true)
+```
+
+### Search for Cases by Text
+
+Search the full text of cases and return the cases that contain the search term
+
+```ruby
+client.search_cases("insurance", 20)
+```
+
+Or you can search multiple terms by separating the terms with a space
+```ruby
+client.search_cases("insurance Peoria", 20)
 ```

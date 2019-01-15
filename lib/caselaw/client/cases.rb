@@ -9,7 +9,7 @@ module Caselaw
       Hashie::Mash.new(request(path))
     end
 
-    def cases_by_jurisdiction_id(jurisdiction_id, full_case = false)
+    def cases_by_jurisdiction_id(jurisdiction_id, num_cases, full_case = false)
       slug = Caselaw::Jurisdiction.get_by_id(jurisdiction_id)
       
       path = API_ENDPOINT + "?jurisdiction=" + slug unless full_case == true
@@ -17,7 +17,7 @@ module Caselaw
       Hashie::Mash.new(request(path)) #add pagination request
     end
 
-    def cases_by_jurisdiction_name(jurisdiction_name, full_case = false)
+    def cases_by_jurisdiction_name(jurisdiction_name, num_cases, full_case = false)
       slug = Caselaw::Jurisdiction.get_by_name(jurisdiction_name)
       
       path = API_ENDPOINT + "?jurisdiction=" + slug unless full_case == true
@@ -25,16 +25,17 @@ module Caselaw
       Hashie::Mash.new(request(path)) #add pagination request
     end
 
-    def case_search(term)
+    # Search through text of cases and return cases that contain the word
+    def search_cases(term, num_cases)
       
     end
 
-    def case_search_by_jurisdiction_id(term, jurisdiction_id)
+    def search_cases_by_jurisdiction_id(term, num_cases, jurisdiction_id)
       slug = Caselaw::Jurisdiction.get_by_id(jurisdiction_id)
       
     end
 
-    def case_search_by_jurisdiction_name(term, jurisdiction_name)
+    def search_cases_by_jurisdiction_name(term, num_cases, jurisdiction_name)
       slug = Caselaw::Jurisdiction.get_by_name(jurisdiction_name)
     end
   end
