@@ -24,5 +24,17 @@ search = client.search_jurisdictions
 jurisdiction_array = search.results
 ```
 
+If you wish to find out the slug of a specific jurisdiction
+
+```ruby
+slug = Caselaw::Jurisdiction.get_by_name("Utah") # => 'utah'
+```
+
+or you can retrieve the slug by the jurisdiction id
+
+```ruby
+slug = Caselaw::Jurisdiction.get_by_id(12) # => 'utah'
+```
+
 ## Cases
 
