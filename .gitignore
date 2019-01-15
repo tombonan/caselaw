@@ -34,3 +34,4 @@ tmtags/.bundle/
 
 # test files
 sample-requests.txt
+/examples/test.rb
