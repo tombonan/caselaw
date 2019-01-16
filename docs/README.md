@@ -11,7 +11,7 @@ You can lookup a Jurisdiction by id
 client.jurisdiction(31)
 ```
 
-Or by the full name if the id is unknown
+or by the full name if the id is unknown
 
 ```ruby
 client.jurisdiction_by_name("Colorado")

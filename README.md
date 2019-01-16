@@ -67,7 +67,7 @@ client.case(1021505, true)
 
 ### Search for Cases by Text
 
-Search the full text of cases and return the cases that contain the search term
+Search the full text of cases and return the cases that contain the search term. The second argument is the number of cases to be returned.
 
 ```ruby
 client.search_cases("insurance", 20)
