@@ -27,16 +27,20 @@ module Caselaw
 
     # Search through text of cases and return cases that contain the word
     def search_cases(term, num_cases)
-      
+      path = API_ENDPOINT + "?search=" + term
+      Hashie::Mash.new(request(path)) #add pagination request
     end
 
     def search_cases_by_jurisdiction_id(term, num_cases, jurisdiction_id)
       slug = Caselaw::Jurisdiction.get_by_id(jurisdiction_id)
-      
+      path = API_ENDPOINT + "?search=" + term + "&jurisdiction=" + slug
+      Hashie::Mash.new(request(path)) #add pagination request
     end
 
     def search_cases_by_jurisdiction_name(term, num_cases, jurisdiction_name)
       slug = Caselaw::Jurisdiction.get_by_name(jurisdiction_name)
+      path = API_ENDPOINT + "?search=" + term + "&jurisdiction=" + slug
+      Hashie::Mash.new(request(path)) #add pagination request
     end
   end
 end

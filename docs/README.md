@@ -38,3 +38,34 @@ slug = Caselaw::Jurisdiction.get_by_id(12) # => 'utah'
 
 ## Cases
 
+### Specific Case Instances
+
+You can lookup a specific case by its id
+
+```ruby
+client.case(1021505)
+```
+
+And to return the full body of the case, add the `true` parameter as the second argument
+
+```ruby
+client.case(1021505, true)
+```
+
+### Cases by Jurisdiction
+
+### Cases by Search Term
+
+Search through cases that have a specific search term in the body of the case. The first argument is the search term and the second is the maximum number of case results you wish to return
+
+```ruby
+client.search_cases("witchcraft", 30)
+```
+
+You can also search through the text of cases by jurisdiction where the third argument is the jurisdiciton id or name
+
+```ruby
+client.search_cases_by_jurisdiction_id("witchcraft", 30, 31)
+client.search_cases_by_jurisdiction_name("witchcraft", 30, "Colorado")
+
+
