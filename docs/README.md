@@ -16,7 +16,7 @@ client.jurisdiction(31)
 or by the full name if the id is unknown
 
 ```ruby
-client.jurisdiction_by_name("Colorado")
+client.jurisdiction("Colorado")
 ```
 
 ### Returning All Jurisdiction Information
