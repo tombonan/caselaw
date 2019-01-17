@@ -21,7 +21,6 @@ module Caselaw
     def initialize(settings = {})
       fail(ArgumentError, "API key hash is required.") unless settings.is_a?(Hash)
       @api_key = settings[:api_key]
-      
     end
   end
 end
