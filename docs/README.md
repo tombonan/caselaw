@@ -5,7 +5,9 @@
 
 ## Jurisdictions
 
-You can lookup a Jurisdiction by id
+### Specific Jurisdiction Information
+
+You can lookup a jurisdiction by id
 
 ```ruby
 client.jurisdiction(31)
@@ -17,6 +19,8 @@ or by the full name if the id is unknown
 client.jurisdiction_by_name("Colorado")
 ```
 
+### Returning All Jurisdiction Information
+
 To recieve an array with all 62 jurisdictions and related information
 
 ```ruby
@@ -24,7 +28,9 @@ search = client.search_jurisdictions
 jurisdiction_array = search.results
 ```
 
-If you wish to find out the slug of a specific jurisdiction
+### Jurisdiction Slugs
+
+The Caselaw API uses jurisdiction slugs to filter requests. If you wish to find out the slug of a specific jurisdiction
 
 ```ruby
 slug = Caselaw::Jurisdiction.get_by_name("Utah") # => 'utah'
@@ -54,6 +60,20 @@ client.case(1021505, true)
 
 ### Cases by Jurisdiction
 
+To return an array of cases by jurisdiction, search either by jurisdiction id or name
+
+```ruby
+client.cases_by_jurisdiciton("Colorado", 20)
+client.cases_by_jurisdiciton(31, 20)
+```
+
+This method can also return the full body of a case
+
+```ruby
+client.cases_by_jurisdiciton("Colorado", 20, true)
+client.cases_by_jurisdiciton(31, 20, true)
+```
+
 ### Cases by Search Term
 
 Search through cases that have a specific search term in the body of the case. The first argument is the search term and the second is the maximum number of case results you wish to return
@@ -65,7 +85,8 @@ client.search_cases("witchcraft", 30)
 You can also search through the text of cases by jurisdiction where the third argument is the jurisdiciton id or name
 
 ```ruby
-client.search_cases_by_jurisdiction_id("witchcraft", 30, 31)
-client.search_cases_by_jurisdiction_name("witchcraft", 30, "Colorado")
+client.search_cases("witchcraft", 30, 31)
+client.search_cases("witchcraft", 30, "Colorado")
+```
 
 
