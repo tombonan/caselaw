@@ -13,7 +13,8 @@ module Caselaw
       slug = slug(jurisdiction_term)
       path = API_ENDPOINT + "?jurisdiction=" + slug
       path = path + "&full_case=true" if full_case == true
-      Hashie::Mash.new(request(path)) #add pagination request
+      tempArray = paginated_request(path, num_cases)
+      Hashie::Mash.new(resultsCount: tempArray.count, results: tempArray)
     end
 
     # Search through text of cases and return cases that contain the word
@@ -24,7 +25,8 @@ module Caselaw
       else
         path = API_ENDPOINT + "?search=" + term
       end
-      Hashie::Mash.new(request(path)) #add pagination request
+      tempArray = paginated_request(path, num_cases)
+      Hashie::Mash.new(resultsCount: tempArray.count, results: tempArray)
     end
   end
 end
