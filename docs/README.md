@@ -60,7 +60,7 @@ client.case(1021505, true)
 
 ### Cases by Jurisdiction
 
-To return an array of cases by jurisdiction, search either by jurisdiction id or name
+To return an array of cases by jurisdiction, search either by jurisdiction id or name and enter in the number of cases you want returned as the second argument
 
 ```ruby
 client.cases_by_jurisdiciton("Colorado", 20)

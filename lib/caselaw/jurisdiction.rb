@@ -76,15 +76,15 @@ module Caselaw
     end
 
     def self.get_by_name(name)
-      jurisdiction = all.find { |s| s.name.downcase == name.downcase }
-      slug = jurisdiction.slug
-      slug
+      jurisdiction = all.find { |j| j.name.downcase == name.downcase }
+      fail(Caselaw::NotFound, "Jurisdiciton not found, please check spelling.") if jurisdiction.nil?
+      jurisdiction.slug
     end
 
     def self.get_by_id(id)
-      jurisdiction = all.find { |s| s.id == id }
-      slug = jurisdiction.slug
-      slug
+      jurisdiction = all.find { |j| j.id == id }
+      fail(Caselaw::NotFound, "Jurisdiciton not found, please check id referenced.") if jurisdiction.nil?
+      jurisdiction.slug
     end
   end
 end
