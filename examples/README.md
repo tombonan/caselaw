@@ -9,3 +9,6 @@ Copy the script and replace the first two lines with `require 'caselaw'` after i
 
 * [Get all Jurisdictions](jurisdictions.rb)
   * Print out a list of jurisdictions and related info
+
+* [Searching Cases by Text](witchcraft.rb)
+  * Print out a search of the first 40 cases that contain the word "witchcraft" in the text of the case
