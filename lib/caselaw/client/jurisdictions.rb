@@ -7,6 +7,7 @@ module Caselaw
       Hashie::Mash.new(request(API_ENDPOINT))
     end
 
+    # Search for a specific Jurisdiction
     def jurisdiction(jurisdiction_term)
       slug = slug(jurisdiction_term)
       path = API_ENDPOINT + slug

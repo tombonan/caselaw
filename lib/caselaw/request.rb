@@ -1,4 +1,5 @@
 require "httparty"
+require "hashie"
 
 module Caselaw
   module Request
@@ -8,7 +9,7 @@ module Caselaw
       token = api_key || Caselaw.configuration[:api_key]
       fail(Caselaw::ConfigurationError, "API key is required.") if token.nil?
 
-      puts "Sending request"
+      puts "Sending Request..."
       res = HTTParty.get(API_ROOT + path, headers: {"Authorization" => "Token " + token})
       parsed_response(res)
     end
@@ -24,7 +25,7 @@ module Caselaw
       path = API_ROOT + path
       
       initialRes = HTTParty.get(path, headers: {"Authorization" => "Token " + token})
-      puts "Sending request"
+      puts "Sending Request..."
 
       initialRes = initialRes.parsed_response
 

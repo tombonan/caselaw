@@ -2,6 +2,12 @@
 
 ## Installation
 
+Install with RubyGems
+
+```
+gem install caselaw
+```
+
 ## Getting started
 
 In order to view non-whitelisted court cases, you must [register an account](https://case.law/user/register/) with Case.law and recieve an API key.
@@ -26,6 +32,12 @@ You can define the credentials for a client at a global level by creating an ini
 Caselaw.configure(
   api_key: "KEY"
 )
+```
+
+To access the global configuration:
+
+``` ruby
+Caselaw.configuration
 ```
 
 ## Examples
@@ -76,4 +88,25 @@ client.search_cases("insurance", 20)
 Or you can search multiple terms by separating the terms with a space
 ```ruby
 client.search_cases("insurance Peoria", 20)
+```
+
+## Response Structure
+
+Each response comes in the form of a [Hashie](https://github.com/intridea/hashie) hash to make it easier to access the data. For instance, if we search case `1021505`, we can access information about it easily with Hashie:
+
+```ruby
+case = client.case(1021505)
+
+case.id			        # => 1021505
+case.url			# => "https://api.case.law/v1/cases/1021505/"
+case.name			# => "William Stone against William Boreman"
+case.name_abbreviation          # => "Stone v. Boreman"
+case.decision_date 		# => "1658"
+```
+
+As well as information about the Volume, Reporter, Court, and Jurisdiction that the case:
+
+```ruby
+case.court.name			# => "Maryland Court of Appeals"
+case.jurisdiction.name_long 	# => "Maryland"
 ```
