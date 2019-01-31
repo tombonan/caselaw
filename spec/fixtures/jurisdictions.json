@@ -1,0 +1,505 @@
+{
+  "count": 62,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "url": "https://api.case.law/v1/jurisdictions/ala/",
+      "id": 23,
+      "slug": "ala",
+      "name": "Ala.",
+      "name_long": "Alabama",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/alaska/",
+      "id": 53,
+      "slug": "alaska",
+      "name": "Alaska",
+      "name_long": "Alaska",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/am-samoa/",
+      "id": 58,
+      "slug": "am-samoa",
+      "name": "Am. Samoa",
+      "name_long": "American Samoa",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/ariz/",
+      "id": 21,
+      "slug": "ariz",
+      "name": "Ariz.",
+      "name_long": "Arizona",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/ark/",
+      "id": 34,
+      "slug": "ark",
+      "name": "Ark.",
+      "name_long": "Arkansas",
+      "whitelisted": true
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/cal/",
+      "id": 30,
+      "slug": "cal",
+      "name": "Cal.",
+      "name_long": "California",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/colo/",
+      "id": 31,
+      "slug": "colo",
+      "name": "Colo.",
+      "name_long": "Colorado",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/conn/",
+      "id": 2,
+      "slug": "conn",
+      "name": "Conn.",
+      "name_long": "Connecticut",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/dakota-territory/",
+      "id": 55,
+      "slug": "dakota-territory",
+      "name": "Dakota Territory",
+      "name_long": "Dakota Territory",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/dc/",
+      "id": 56,
+      "slug": "dc",
+      "name": "D.C.",
+      "name_long": "District of Columbia",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/del/",
+      "id": 8,
+      "slug": "del",
+      "name": "Del.",
+      "name_long": "Delaware",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/fla/",
+      "id": 28,
+      "slug": "fla",
+      "name": "Fla.",
+      "name_long": "Florida",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/ga/",
+      "id": 3,
+      "slug": "ga",
+      "name": "Ga.",
+      "name_long": "Georgia",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/guam/",
+      "id": 60,
+      "slug": "guam",
+      "name": "Guam",
+      "name_long": "Guam",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/haw/",
+      "id": 40,
+      "slug": "haw",
+      "name": "Haw.",
+      "name_long": "Hawaii",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/idaho/",
+      "id": 27,
+      "slug": "idaho",
+      "name": "Idaho",
+      "name_long": "Idaho",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/ill/",
+      "id": 29,
+      "slug": "ill",
+      "name": "Ill.",
+      "name_long": "Illinois",
+      "whitelisted": true
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/ind/",
+      "id": 14,
+      "slug": "ind",
+      "name": "Ind.",
+      "name_long": "Indiana",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/iowa/",
+      "id": 45,
+      "slug": "iowa",
+      "name": "Iowa",
+      "name_long": "Iowa",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/kan/",
+      "id": 43,
+      "slug": "kan",
+      "name": "Kan.",
+      "name_long": "Kansas",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/ky/",
+      "id": 26,
+      "slug": "ky",
+      "name": "Ky.",
+      "name_long": "Kentucky",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/la/",
+      "id": 10,
+      "slug": "la",
+      "name": "La.",
+      "name_long": "Louisiana",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/mass/",
+      "id": 4,
+      "slug": "mass",
+      "name": "Mass.",
+      "name_long": "Massachusetts",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/md/",
+      "id": 50,
+      "slug": "md",
+      "name": "Md.",
+      "name_long": "Maryland",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/me/",
+      "id": 42,
+      "slug": "me",
+      "name": "Me.",
+      "name_long": "Maine",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/mich/",
+      "id": 49,
+      "slug": "mich",
+      "name": "Mich.",
+      "name_long": "Michigan",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/minn/",
+      "id": 36,
+      "slug": "minn",
+      "name": "Minn.",
+      "name_long": "Minnesota",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/miss/",
+      "id": 16,
+      "slug": "miss",
+      "name": "Miss.",
+      "name_long": "Mississippi",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/mo/",
+      "id": 37,
+      "slug": "mo",
+      "name": "Mo.",
+      "name_long": "Missouri",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/mont/",
+      "id": 20,
+      "slug": "mont",
+      "name": "Mont.",
+      "name_long": "Montana",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/native-american/",
+      "id": 61,
+      "slug": "native-american",
+      "name": "Native American",
+      "name_long": "Native American",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/navajo-nation/",
+      "id": 41,
+      "slug": "navajo-nation",
+      "name": "Navajo Nation",
+      "name_long": "Navajo Nation",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/nc/",
+      "id": 5,
+      "slug": "nc",
+      "name": "N.C.",
+      "name_long": "North Carolina",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/nd/",
+      "id": 18,
+      "slug": "nd",
+      "name": "N.D.",
+      "name_long": "North Dakota",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/neb/",
+      "id": 51,
+      "slug": "neb",
+      "name": "Neb.",
+      "name_long": "Nebraska",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/nev/",
+      "id": 48,
+      "slug": "nev",
+      "name": "Nev.",
+      "name_long": "Nevada",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/nh/",
+      "id": 47,
+      "slug": "nh",
+      "name": "N.H.",
+      "name_long": "New Hampshire",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/nj/",
+      "id": 24,
+      "slug": "nj",
+      "name": "N.J.",
+      "name_long": "New Jersey",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/nm/",
+      "id": 52,
+      "slug": "nm",
+      "name": "N.M.",
+      "name_long": "New Mexico",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/n-mar-i/",
+      "id": 57,
+      "slug": "n-mar-i",
+      "name": "N. Mar. I.",
+      "name_long": "Northern Mariana Islands",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/ny/",
+      "id": 1,
+      "slug": "ny",
+      "name": "N.Y.",
+      "name_long": "New York",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/ohio/",
+      "id": 22,
+      "slug": "ohio",
+      "name": "Ohio",
+      "name_long": "Ohio",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/okla/",
+      "id": 13,
+      "slug": "okla",
+      "name": "Okla.",
+      "name_long": "Oklahoma",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/or/",
+      "id": 19,
+      "slug": "or",
+      "name": "Or.",
+      "name_long": "Oregon",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/pa/",
+      "id": 6,
+      "slug": "pa",
+      "name": "Pa.",
+      "name_long": "Pennsylvania",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/pr/",
+      "id": 25,
+      "slug": "pr",
+      "name": "P.R.",
+      "name_long": "Puerto Rico",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/regional/",
+      "id": 9,
+      "slug": "regional",
+      "name": "Regional",
+      "name_long": "Regional",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/ri/",
+      "id": 15,
+      "slug": "ri",
+      "name": "R.I.",
+      "name_long": "Rhode Island",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/sc/",
+      "id": 59,
+      "slug": "sc",
+      "name": "S.C.",
+      "name_long": "South Carolina",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/sd/",
+      "id": 54,
+      "slug": "sd",
+      "name": "S.D.",
+      "name_long": "South Dakota",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/tenn/",
+      "id": 11,
+      "slug": "tenn",
+      "name": "Tenn.",
+      "name_long": "Tennessee",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/tex/",
+      "id": 32,
+      "slug": "tex",
+      "name": "Tex.",
+      "name_long": "Texas",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/tribal/",
+      "id": 62,
+      "slug": "tribal",
+      "name": "Tribal",
+      "name_long": "Tribal Jurisdictions",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/us/",
+      "id": 39,
+      "slug": "us",
+      "name": "U.S.",
+      "name_long": "United States",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/utah/",
+      "id": 12,
+      "slug": "utah",
+      "name": "Utah",
+      "name_long": "Utah",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/va/",
+      "id": 7,
+      "slug": "va",
+      "name": "Va.",
+      "name_long": "Virginia",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/vi/",
+      "id": 44,
+      "slug": "vi",
+      "name": "V.I.",
+      "name_long": "Virgin Islands",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/vt/",
+      "id": 17,
+      "slug": "vt",
+      "name": "Vt.",
+      "name_long": "Vermont",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/wash/",
+      "id": 38,
+      "slug": "wash",
+      "name": "Wash.",
+      "name_long": "Washington",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/wis/",
+      "id": 46,
+      "slug": "wis",
+      "name": "Wis.",
+      "name_long": "Wisconsin",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/w-va/",
+      "id": 35,
+      "slug": "w-va",
+      "name": "W. Va.",
+      "name_long": "West Virginia",
+      "whitelisted": false
+    },
+    {
+      "url": "https://api.case.law/v1/jurisdictions/wyo/",
+      "id": 33,
+      "slug": "wyo",
+      "name": "Wyo.",
+      "name_long": "Wyoming",
+      "whitelisted": false
+    }
+  ]
+}
+
+
