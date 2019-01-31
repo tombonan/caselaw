@@ -9,9 +9,13 @@ module Caselaw
       token = api_key || Caselaw.configuration[:api_key]
       fail(Caselaw::ConfigurationError, "API key is required.") if token.nil?
 
-      puts "Sending Request..."
-      res = HTTParty.get(API_ROOT + path, headers: {"Authorization" => "Token " + token})
-      parsed_response(res)
+      res = HTTParty.get(API_ROOT + path, headers: {"Authorization" => "Token " + token}) 
+        case res.code
+        when 200
+          parsed_response(res)
+        when 404
+          fail(Caselaw::NotFound)
+        end
     end
 
     def paginated_request(path, num)
@@ -25,8 +29,6 @@ module Caselaw
       path = API_ROOT + path
       
       initialRes = HTTParty.get(path, headers: {"Authorization" => "Token " + token})
-      puts "Sending Request..."
-
       initialRes = initialRes.parsed_response
 
       while nextPageExists && count <= num
