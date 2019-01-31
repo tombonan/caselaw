@@ -1,4 +1,8 @@
-# CaseLaw API Wrapper
+# CaseLaw API Wrapper [![Build Status](https://travis-ci.org/tombonan/caselaw.svg?branch=master)](https://travis-ci.org/tombonan/caselaw)
+
+## Requirements
+
+Ruby 2.0+
 
 ## Installation
 
